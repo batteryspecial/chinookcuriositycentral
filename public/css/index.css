@@ -1,0 +1,183 @@
+/* This font matches the font used for the CCC Linktree, https://linktr.ee/Chinook_Curiosity_Central */
+.body-text {
+    background-image: linear-gradient(to bottom right, white, aliceblue);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+.poppins-regular {
+    font-family: "Poppins", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.5;
+}
+
+/*** HEADER ***/
+.header-gradient {
+    background: #D9DCDE;
+    background: linear-gradient(to top, #D9DCDE, #F8F9FA 4.749rem);
+}
+.headerbox {
+    min-height: 100vh; /* Ensures the container is at least the full viewport height */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+}
+
+/*** NEW EVENTS ***/
+.promotionbox {
+    min-height: calc(100vh - 75.98px);
+    display: flex;
+    flex-direction: column;  /* Changed to column layout */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.promotion-content {
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.promotion-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.promotion-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    min-height: 300px;
+}
+.promotion-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #2196F3, #4CAF50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.promotion-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+.promotion-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #2196F3, #4CAF50);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+.promotion-cta:hover {
+    transform: translateY(-3px);
+}
+
+/*** Diciontary ***/
+.dictionary-entry {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.definition-block {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/*** Textbox ***/
+.textbox {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.gradient-text {
+    text-shadow: 2px 2px 4px rgb(184, 222, 255);
+    transition: all 0.3s ease;
+}
+.gradient-text:hover {
+    text-shadow: 2px 2px 4px rgb(131, 197, 255);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.responsive-centering {
+    width: fit-content;
+}
+
+@media (max-width: 992px) { /* This targets screens below the lg breakpoint */
+    .responsive-centering {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textbox {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%; /* Ensures the div stays responsive */
+    }
+
+    .dictionary-entry {
+        padding: 1rem;
+    }
+    
+    .definition-block {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 768px) { /* This targets screens below the md breakpoint */
+    .promotion-content {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 1rem;
+    }
+    .promotion-text {
+        padding-left: 0;
+    }
+    .promotion-title {
+        font-size: 2rem;
+    }
+    .promotion-description {
+        font-size: 1.1rem;
+    }
+    
+    /* Adjusting the navbar for mobile */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+}
+@media (max-width: 576px) { /* This targets screens below the sm breakpoint */
+    .sm-noborder {
+        border: 0 !important; 
+    }
+    /* Make the Enigma Express container responsive */
+    .inverse-gradient {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Fine-tune for very small screens */
+@media (max-width: 480px) {
+    
+}

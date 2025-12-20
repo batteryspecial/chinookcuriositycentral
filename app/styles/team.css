@@ -1,0 +1,102 @@
+/* This font matches the font used for the CCC Linktree, https://linktr.ee/Chinook_Curiosity_Central */
+body {
+    background-image: linear-gradient(to bottom right, white, aliceblue);
+    font-family: 'DM Sans', sans-serif;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+.debug {
+    border: 5px solid red;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Adjusting the navbar for mobile */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: left;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .page {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .responsive-hr {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid currentcolor; /* Create a new bottom border if none exists */
+    }
+
+    /* Make the Enigma Express container responsive */
+    .inverse-gradient {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Stack cards vertically on small screens */
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.inverse-gradient{
+    background-image: linear-gradient(aliceblue, grey);
+}
+div.middle-div {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.card-img-top {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-text {
+    line-height: 1.5;
+}
+
+/* Parallax */
+.team-parallax {
+    background-image: url("/static/src/profiles/team-2023.jpg");
+    min-height: 400px;
+    height: auto;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Team Cards */
+.memberlabel {
+    padding-top: 1rem;
+    text-align: center;
+}
