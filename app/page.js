@@ -9,6 +9,7 @@ import './styles/universal.css';
 
 function scrollToPromotion() {
   const element = document.getElementById('promotion-main');
+  if (!element) return;
   const headerOffset = 76;
   const elementPosition = element.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -86,7 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="p-5" style={{ backgroundImage: 'linear-gradient(90deg, rgb(248, 252, 255), #e6ecff)' }}>
+      <div className="p-5" style={{ backgroundImage: 'linear-gradient(90deg, rgb(248, 252, 255), #e6ecff)' }} id="promotion-main">
         <div className="textbox">
           <div className="pt-4 pb-4 text-center">
             <h1 className="fade-target fw-bold">Why Curiosity?</h1>
